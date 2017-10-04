@@ -6,5 +6,4 @@ public class Person {
     int current_balance;
     boolean debt;
     float avg;
-    can also implement loan tracker in this that whether a person owes money to another person
 }
