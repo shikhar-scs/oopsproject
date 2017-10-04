@@ -1,18 +1,14 @@
-java.util.AbstractMap
-java.lang.Object
-java.util.List
+//java.util.AbstractMap
+//java.lang.Object
+//java.util.List
 
 public class Owes_To {
 
-    int id;
-    char tag;
-    char [] mode_of_payment;
+    private int id;
+    private char tag;
+    private int amount;
+    private char [] mode_of_payment;
+    private boolean sign;
     //date / time
-    boolean sign;
-    int amount;
 }
-
-
-public class Vector<E>
-        extends AbstractList<E>
-        implements List<E>, RandomAccess, Cloneable, Serializable
+//the above mentioned tasks are yet to be implemented
