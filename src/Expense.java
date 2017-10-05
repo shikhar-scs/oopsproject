@@ -1,8 +1,10 @@
+import java.util.Date;
+
 public class Expense {
 
     private char [] tag;
     private char [] mode_of_payment;
-    //include date / time
+    Date OnDate = Date();
     private boolean sign;
     private int amount;
     //vector for different total expenses for all modes;
