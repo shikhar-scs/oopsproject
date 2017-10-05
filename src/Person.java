@@ -12,6 +12,14 @@ import java.lang.*;
 import java.util.Vector;
 
 
+// CALL ME WHEN THERE IS MORE WORK TO DO
+// CALL ME WHEN THERE IS MORE WORK TO DO
+// CALL ME WHEN THERE IS MORE WORK TO DO
+// CALL ME WHEN THERE IS MORE WORK TO DO
+// CALL ME WHEN THERE IS MORE WORK TO DO
+// CALL ME WHEN THERE IS MORE WORK TO DO
+// CALL ME WHEN THERE IS MORE WORK TO DO
+// CALL ME WHEN THERE IS MORE WORK TO DO
 public class Person {
 
     public Scanner input  = new Scanner(System.in);
@@ -58,7 +66,7 @@ public class Person {
             case 4 :int t=TotalDisplay();//can be implemented here only by iterating through amount and display total);
                     // break not included on purpose as TOtal days is anyways required for both
             case 5 : int d=TotalDays();
-                        avg_
+                       object.tot_avg=t/d;_
                 System.out.println(t/d);;
                 break;
         }

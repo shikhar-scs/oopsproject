@@ -4,7 +4,6 @@
 import java.util.*;
 import java.lang.*;
 import java.util.Vector;
-//import java.io.*;
 
 public class index {
     private static Vector<Person> vectorOfPersons=new Vector<>(0);
