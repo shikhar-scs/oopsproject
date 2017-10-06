@@ -1,9 +1,6 @@
-//all tasks have been achieved till now
-//please follow the comments to understand the code
 
 import java.util.*;
 import java.lang.*;
-import java.util.Vector;
 
 public class index {
     private static Vector<Person> vectorOfPersons=new Vector<>(0);
@@ -28,7 +25,7 @@ public class index {
 
         if (vectorOfPersons.elementAt(signInPos).verify(userName, password)) {
             vectorOfPersons.elementAt(signInPos).loggedIn();
-            main(null);//for now everytime logged in is called it will call main()
+            main(null);//for now every time logged in is called it will call main()
             //later we can set up a user determined log out which will only be logged out
             //when user wants to
             //by using thread Handling
@@ -41,6 +38,8 @@ public class index {
     }
 
     private static void signUp() {
+
+        System.out.println('\n');
         Person tempPerson;/* Details of newly signed up person
          later this will be pushed into the master object vector array*/
 
@@ -84,6 +83,7 @@ public class index {
             main(null);//again shows up the main menu
         }
         //if password cross-verification true then....
+        System.out.println('\n');
         System.out.println("Do you want to sign in now");
         String decision=input.nextLine();
         if(decision.equalsIgnoreCase("yes"))
@@ -93,7 +93,7 @@ public class index {
     }
 
     public static void main(String[] args) { //my main function where program would be run from
-
+        System.out.println('\n');
         Scanner input = new Scanner(System.in);
         System.out.println("1. Sign in\n2. Sign up");
         int choice = input.nextInt();
