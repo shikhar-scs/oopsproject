@@ -1,31 +1,36 @@
-import java.util.Date;
+import java.util.*;
 
 public class Expense {
 
-    private char [] tag;
-    private char [] mode_of_payment;
-    Date OnDate = Date();
-    private boolean sign;
-    private int amount;
-    //vector for different total expenses for all modes;
-    private float avg_exp;
-    public static void add()
-    {
+    private String tag;
+    private String modeOfPayment;
+    private float amount;
+    private String date;
 
+    Expense(String tag,String modeOfPayment,float amount,Date date) {
+        this.tag=tag;
+        this.amount=amount;
+        this.date= date.getDate()+"/"+date.getMonth()+"/"+date.getYear();/**These functions may appear to be struck off
+         as they are "DEPRECATED METHODS"*/
+        this.modeOfPayment=modeOfPayment;
     }
+    public String returnTag() {
+        return tag;
+    }
+    public float returnAmount() {
+        return amount;
+    }
+    public String returnDate() {
+        return date;
+    }
+    public String returnModeOfPayment() {
+        return modeOfPayment;
+    }
+
 
 }
 
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-// CALL ME WHEN THERE IS MORE WORK TO DO
-  //  the above mentioned tasks are yet to be implemented
+/**Previous tasks have been implemented #SHM
+ *
+ *
+ * calculation of average expense still remains */
