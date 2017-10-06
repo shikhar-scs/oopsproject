@@ -35,7 +35,8 @@ public class Person {
     private void viewExpenses(){
         System.out.println('\n');
         System.out.println("Expenses Details");
-        System.out.println("--Sr.-- "+" --Category-- "+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
+        System.out.println("--Sr.-- "+" --Tag" +
+                "-- "+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
         for(int i=0;i<vectorOfExpenses.size();i++) {
             System.out.println((i+1)+"   "+vectorOfExpenses.elementAt(i).returnTag()+"   "+vectorOfExpenses.elementAt(i).returnDate()+"   "+vectorOfExpenses.elementAt(i).returnModeOfPayment()+"   "+vectorOfExpenses.elementAt(i).returnAmount());
         }
@@ -45,9 +46,9 @@ public class Person {
         System.out.println('\n');
         System.out.println("Money Lent/Borrowed from friends");
 
-        System.out.println("--Sr.-- "+" --Category-- "+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
+        System.out.println("--Sr.-- "+" --Category-- "+"--Tag--"+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
         for(int i=0;i<vectorOfExpenses.size();i++) {
-            System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
+            System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returnType()+"   "vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
         }
 
         System.out.println('\n');
@@ -93,6 +94,7 @@ public class Person {
 
             System.out.println("Please Enter The Loan Number/Id");
             String loanNum=input.nextLine();
+            input.nextLine();
 
             tempLoan=new Owes_To("Loan",bankName,rate,amount,loanNum);
         }
@@ -104,9 +106,11 @@ public class Person {
 
             System.out.println("Please Enter The Type Of Account");
             String accountType=input.nextLine();
+            input.nextLine();
 
             System.out.println("Please Enter The Account Number");
             String accountNum=input.nextLine();
+            input.nextLine();
 
             System.out.println("Please Enter The Rate Of Interest");
             float rate=input.nextFloat();
@@ -123,6 +127,8 @@ public class Person {
 
         System.out.println("Please enter the category/tag of expenditure");
         String tag=input.nextLine();
+        input.nextLine();
+
 
         System.out.println("Please enter the amount of expenditure");
         float amount=input.nextFloat();
@@ -173,7 +179,7 @@ public class Person {
         Date maxDate,minDate = new Date();
         Date tempDate = new Date();
 
-        maxDate=minDate = vectorOfExpenses.elementAt(0).returnDate();
+        maxDate = minDate = vectorOfExpenses.elementAt(0).returnDate();
 
         for(int i=0; i<vectorOfExpenses.size();i++)
         {
@@ -184,7 +190,9 @@ public class Person {
         }
 
         long diffInMillies = maxDate.getTime() - minDate.getTime();
+
         diffInMillies = diffInMillies /1000/60/60/24;
+
         System.out.println("The Avg Expense Per Day is  "+ total/diffInMillies + "\n");
 
     }
@@ -195,19 +203,24 @@ public class Person {
 
         System.out.println("Please Enter The Name Of The Friend");
         String PersonName=input.nextLine();
+        input.nextLine();
 
         System.out.println("Please Enter The Amount");
         float amount=input.nextFloat();
+        input.nextLine();
 
         System.out.println("Please Enter the Type Borrow/Lend");
         String type=input.nextLine();
+        input.nextLine();
 
 
         System.out.println("Please Enter The Tag");
         String tag=input.nextLine();
+        input.nextLine();
 
         System.out.println("Please Enter The Mode Of Payment");
         String ModeOfPayment=input.nextLine();
+        input.nextLine();
 
         Date date=new Date();
 
@@ -224,6 +237,7 @@ public class Person {
 
         System.out.println("Please enter the name of Person");
         String deltag = input.nextLine();
+        input.nextLine();
 
         int p = 1;
 
@@ -303,12 +317,3 @@ public class Person {
         return userName;
     }
 }
-
-/*
- * SHIKHAR :
- * you have to design case number 2 and 5
- */
-
-/* Done :)
-
- */
