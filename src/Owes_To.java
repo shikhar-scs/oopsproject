@@ -1,6 +1,6 @@
 
 
-/**I HAVE TOTALLY CHANGED THE WAY OWES_TO NOW FUNCTIONS
+/*I HAVE TOTALLY CHANGED THE WAY OWES_TO NOW FUNCTIONS
  *PLEASE READ THE BELOW LINES TO UNDERSTAND HOW I HAVE IMPLEMENTED
  *
  * basically now owes to is a class which maintains details
@@ -9,7 +9,7 @@
 public class Owes_To {
 
     private String bankName;
-    private String type;/**whether a person wants to store as a deposit or take loan*/
+    private String type;/*whether a person wants to store as a deposit or take loan*/
     private String accountType;//savings or current
     private float rate;
     private float amount;
@@ -38,7 +38,7 @@ public class Owes_To {
         return loanNum;
     }
 
-    /**Constructor for loan*/
+    /*Constructor for loan*/
     Owes_To (String type,String bankName,float rate,float amount,String loanNum) {
         this.type=type;
         this.bankName=bankName;
@@ -47,7 +47,7 @@ public class Owes_To {
         this.loanNum=loanNum;
     }
 
-    /**Constructor for deposits*/
+    /*Constructor for deposits*/
     Owes_To (String type,String bankName,float rate,float amount,String accountNum,String accountType) {
         this.type=type;
         this.bankName=bankName;
@@ -59,7 +59,7 @@ public class Owes_To {
 
 }
 
-/** Previous tasks have been achieved #SHM
+/* Previous tasks have been achieved #SHM
  *
  *
  * Tasks remaining to be implemented

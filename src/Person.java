@@ -11,8 +11,6 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
-// CALL ME WHEN THERE IS MORE WORK TO DO
-
 public class Person {
 
     private int personId;
@@ -123,7 +121,58 @@ public class Person {
         vectorOfExpenses.add(tempExpense);
     }
 
+    private void deleteExpense() {
+
+        System.out.println('\n');
+
+        System.out.println("Please enter the category/tag of expenditure");
+        String deltag = input.nextLine();
+
+        int p = 1;
+
+        for (int i = 0; i < vectorOfExpenses.size(); i++) {
+            if (vectorOfExpenses.elementAt(i).returnTag().equals(deltag)) {
+                p = -1;
+                vectorOfExpenses.remove(i);
+            }
+        }
+        if (p == 1) {
+            System.out.println("Not Found");
+        }
+        else {
+            System.out.println("Expense has been deleted");
+        }
+    }
+
+    private void averageExpense(){
+
+        int total=0;
+
+        for(int i=0;i<vectorOfExpenses.size();i++)
+            total+=  vectorOfExpenses.elementAt(i).returnAmount();
+
+        Date maxDate,minDate = new Date();
+//        Date minDate = new Date();
+        Date tempDate = new Date();
+
+        maxDate=minDate = vectorOfExpenses.elementAt(0).returnDate();
+
+        for(int i=0; i<vectorOfExpenses.size();i++)
+        {
+            if(tempDate.after(minDate))
+                minDate=tempDate;
+            else if ( tempDate.before(maxDate))
+                maxDate=tempDate;
+        }
+
+        long diffInMillies = maxDate.getTime() - minDate.getTime();
+        diffInMillies = diffInMillies /1000/60/60/24;
+        System.out.println("The Avg Expense Per Day is  "+ total/diffInMillies + "\n");
+
+    }
+
     public void loggedIn () {
+
         System.out.println('\n');
         System.out.println("Successfully logged in as "+personName);
         System.out.println("User Id : "+personId);
@@ -144,11 +193,17 @@ public class Person {
                 case 1:
                     addExpense();
                     break;
+                case 2:
+                    deleteExpense();
+                    break;
                 case 3:
                     addLoan();
                     break;
                 case 4:
                     viewExpenses();
+                    break;
+                case 5:
+                    averageExpense();
                     break;
                 case 6:
                     return;
@@ -169,7 +224,11 @@ public class Person {
     }
 }
 
-/***
+/*
  * SHIKHAR :
  * you have to design case number 2 and 5
+ */
+
+/* Done :)
+
  */
