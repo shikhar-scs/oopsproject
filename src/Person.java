@@ -19,13 +19,17 @@ public class Person {
     private String password;
     private Vector<Expense> vectorOfExpenses=new Vector<>(0);
     private Vector<Owes_To> vectorOfOwes_To=new Vector<>(0);
+    private Vector<Lend_Borrow> vectorOfLend_borrow=new Vector<>(0);
+
     public Scanner input  = new Scanner(System.in);
+
     public Person(String personName,String userName,String password,int personId) {
         this.personName=personName;
         this.userName=userName;
         this.password=password;
         this.personId=personId;
     }
+
     private void viewExpenses(){
         System.out.println('\n');
         System.out.println("Expenses Details");
@@ -152,7 +156,6 @@ public class Person {
             total+=  vectorOfExpenses.elementAt(i).returnAmount();
 
         Date maxDate,minDate = new Date();
-//        Date minDate = new Date();
         Date tempDate = new Date();
 
         maxDate=minDate = vectorOfExpenses.elementAt(0).returnDate();
@@ -171,6 +174,52 @@ public class Person {
 
     }
 
+    private void addtransactionFriend() {
+        System.out.println('\n');
+        Lend_Borrow tempFriend=null;
+
+        System.out.println("Please Enter The Name Of The Friend");
+        String PersonName=input.nextLine();
+
+        System.out.println("Please Enter The Amount");
+        float amount=input.nextFloat();
+
+        System.out.println("Please Enter the Type Borrow/Lend");
+        String type=input.nextLine();
+
+
+        System.out.println("Please Enter The Tag");
+        String tag=input.nextLine();
+
+        tempFriend = new Lend_Borrow(type,PersonName,amount,tag);
+        vectorOfLend_borrow.add(tempFriend);
+    }
+
+
+    private void deletetransactionFriend() {
+
+        System.out.println('\n');
+
+        System.out.println("Please enter the name of Person");
+        String deltag = input.nextLine();
+
+        int p = 1;
+
+        for (int i = 0; i < vectorOfLend_borrow.size(); i++) {
+            if (vectorOfLend_borrow.elementAt(i).returnpersonName().equals(deltag)) {
+                p = -1;
+                vectorOfLend_borrow.remove(i);
+            }
+        }
+        if (p == 1) {
+            System.out.println("Not Found");
+        }
+        else {
+            System.out.println("Expense has been deleted");
+        }
+    }
+
+
     public void loggedIn () {
 
         System.out.println('\n');
@@ -182,9 +231,11 @@ public class Person {
             System.out.println("1. Add New Expense Details");
             System.out.println("2. Delete Existing Expense Details");
             System.out.println("3. Add Details Of A New Loan Or A New Account");
-            System.out.println("4. View Total Expenses, Deposits And Loans");
-            System.out.println("5. Avg Expense per day");
-            System.out.println("6. Log Out");
+            System.out.println("4. Add details of transactions among friends ");
+            System.out.println("5. View details of transactions among friends ");
+            System.out.println("6. View Total Expenses, Deposits And Loans");
+            System.out.println("7. Avg Expense per day");
+            System.out.println("8. Log Out");
             int expenseChoice = input.nextInt();
             input.nextLine();
             System.out.println('\n');
@@ -200,12 +251,18 @@ public class Person {
                     addLoan();
                     break;
                 case 4:
-                    viewExpenses();
+                    addtransactionFriend();
                     break;
                 case 5:
-                    averageExpense();
+                    deletetransactionFriend();
                     break;
                 case 6:
+                    viewExpenses();
+                    break;
+                case 7:
+                    averageExpense();
+                    break;
+                case 8:
                     return;
             }
         }while(true);
