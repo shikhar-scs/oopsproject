@@ -14,6 +14,8 @@ public class Expense {
         this.amount=amount;
         this.date= (returnDate());
         this.modeOfPayment=modeOfPayment;
+        this.date=date;
+
     }
 
     public String returnTag() {

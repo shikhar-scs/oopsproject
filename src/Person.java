@@ -11,6 +11,8 @@ import java.util.*;
 import java.lang.*;
 import java.io.*;
 
+
+
 public class Person {
 
     private int personId;
@@ -36,6 +38,16 @@ public class Person {
         System.out.println("--Sr.-- "+" --Category-- "+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
         for(int i=0;i<vectorOfExpenses.size();i++) {
             System.out.println((i+1)+"   "+vectorOfExpenses.elementAt(i).returnTag()+"   "+vectorOfExpenses.elementAt(i).returnDate()+"   "+vectorOfExpenses.elementAt(i).returnModeOfPayment()+"   "+vectorOfExpenses.elementAt(i).returnAmount());
+        }
+
+
+        System.out.println('\n');
+        System.out.println('\n');
+        System.out.println("Money Lent/Borrowed from friends");
+
+        System.out.println("--Sr.-- "+" --Category-- "+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
+        for(int i=0;i<vectorOfExpenses.size();i++) {
+            System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
         }
 
         System.out.println('\n');
@@ -118,6 +130,8 @@ public class Person {
 
         System.out.println("Please enter the mode of payment of the expenditure");
         String modeOfPayment=input.nextLine();
+        input.nextLine();
+
 
         Date date=new Date();
         tempExpense=new Expense(tag,modeOfPayment,amount,date);
@@ -131,6 +145,7 @@ public class Person {
 
         System.out.println("Please enter the category/tag of expenditure");
         String deltag = input.nextLine();
+        input.nextLine();
 
         int p = 1;
 
@@ -191,7 +206,14 @@ public class Person {
         System.out.println("Please Enter The Tag");
         String tag=input.nextLine();
 
-        tempFriend = new Lend_Borrow(type,PersonName,amount,tag);
+        System.out.println("Please Enter The Mode Of Payment");
+        String ModeOfPayment=input.nextLine();
+
+        Date date=new Date();
+
+
+
+        tempFriend = new Lend_Borrow(type,PersonName,amount,tag,ModeOfPayment,date);
         vectorOfLend_borrow.add(tempFriend);
     }
 
@@ -238,6 +260,7 @@ public class Person {
             System.out.println("8. Log Out");
             int expenseChoice = input.nextInt();
             input.nextLine();
+
             System.out.println('\n');
 
             switch (expenseChoice) {

@@ -1,11 +1,5 @@
 
 
-/*I HAVE TOTALLY CHANGED THE WAY OWES_TO NOW FUNCTIONS
- *PLEASE READ THE BELOW LINES TO UNDERSTAND HOW I HAVE IMPLEMENTED
- *
- * basically now owes to is a class which maintains details
- * of a person's "loan" and "deposits" in banks*/
-
 public class Owes_To {
 
     private String bankName;
