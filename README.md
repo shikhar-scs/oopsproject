@@ -1,4 +1,4 @@
-# EXPENSE TRACKER
+# $ EXPENSE TRACKER $
 
 ### This project aims to help you keep track of your daily expenses. You can enter the reason, amount, mode of payment and it will automatically store it along with the date and time. 
 
