@@ -33,9 +33,9 @@ public class Person {
         System.out.println('\n');
         System.out.println("Money Lent/Borrowed from friends");
 
-        System.out.println("--Sr.-- "+" --Category-- "+"--Tag--"+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
+        System.out.println("--Sr.-- "+" --Category-- "+"--Tag--"+"--Name of Friend " +" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
         for(int i=0;i<vectorOfLend_borrow.size();i++) {
-            System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returnType()+"   "+ vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
+            System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returnType()+"   "+ vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnpersonName()+"  "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
         }
 
         System.out.println('\n');

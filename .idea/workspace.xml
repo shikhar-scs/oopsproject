@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87acf0fc-c335-4e2e-8302-4b9fe19d9980" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cjscsicns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Project/Expense.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Project/Lend_Borrow.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Project/Owes_To.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Project/Person.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Project/index.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/oopsproject/Lend_Borrow.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Project.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Lend_Borrow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oopsproject/Expense.class" afterPath="$PROJECT_DIR$/out/production/oopsproject/Expense.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oopsproject/Owes_To.class" afterPath="$PROJECT_DIR$/out/production/oopsproject/Owes_To.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oopsproject/Person.class" afterPath="$PROJECT_DIR$/out/production/oopsproject/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/oopsproject/index.class" afterPath="$PROJECT_DIR$/out/production/oopsproject/index.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Expense.java" afterPath="$PROJECT_DIR$/src/Expense.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Owes_To.java" afterPath="$PROJECT_DIR$/src/Owes_To.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Person.java" afterPath="$PROJECT_DIR$/src/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.java" afterPath="$PROJECT_DIR$/src/index.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,11 +26,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Expense.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Expense.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="244">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,7 +51,7 @@
       <file leaf-file-name="Lend_Borrow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lend_Borrow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="504">
               <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding />
             </state>
@@ -70,28 +63,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
               <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="166" column="62" lean-forward="false" selection-start-line="166" selection-start-column="62" selection-end-line="166" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -111,8 +82,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/index.java" />
-        <option value="$PROJECT_DIR$/src/Person.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/Person.java" />
       </list>
     </option>
   </component>
@@ -295,12 +266,12 @@
       <updated>1507365829385</updated>
       <workItem from="1507365834016" duration="5295000" />
       <workItem from="1507392830608" duration="3044000" />
-      <workItem from="1507399280178" duration="17000" />
+      <workItem from="1507399280178" duration="326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8356000" />
+    <option name="totallyTimeSpent" value="8665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-11" width="1315" height="780" extended-state="6" />
@@ -315,7 +286,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.3286219" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="29" width="1366" height="689" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32685512" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32659408" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940805" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -444,22 +415,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lend_Borrow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Expense.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Owes_To.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -468,21 +423,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="166" column="62" lean-forward="false" selection-start-line="166" selection-start-column="62" selection-end-line="166" selection-end-column="62" />
+        <state relative-caret-position="72">
+          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1507399414764" expanded="true" signature="28515:28557" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28515:28575" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28515:28588" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28515:28603" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28638:29021" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28651:29006" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28686:28992" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28705:28977" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28779:28957" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28819:28923" ph="..." />
+            <marker date="1507399414764" expanded="true" signature="28840:28901" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://$PROJECT_DIR$/src/Lend_Borrow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        <state relative-caret-position="504">
+          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Expense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
