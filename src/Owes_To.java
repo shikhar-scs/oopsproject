@@ -1,11 +1,5 @@
 
 
-/*I HAVE TOTALLY CHANGED THE WAY OWES_TO NOW FUNCTIONS
- *PLEASE READ THE BELOW LINES TO UNDERSTAND HOW I HAVE IMPLEMENTED
- *
- * basically now owes to is a class which maintains details
- * of a person's "loan" and "deposits" in banks*/
-
 public class Owes_To {
 
     private String bankName;
@@ -56,15 +50,5 @@ public class Owes_To {
         this.accountNum=accountNum;
         this.accountType=accountType;
     }
-
 }
-
-/* Previous tasks have been achieved #SHM
- *
- *
- * Tasks remaining to be implemented
- * status of loan payment
- * date of loan or deposit taken
- * */
-
 

@@ -1,6 +1,4 @@
 import java.util.Date;
-import java.util.*;
-
 
 public class Expense {
 
@@ -14,6 +12,8 @@ public class Expense {
         this.amount=amount;
         this.date= (returnDate());
         this.modeOfPayment=modeOfPayment;
+        this.date=date;
+
     }
 
     public String returnTag() {
@@ -32,8 +32,3 @@ public class Expense {
         return modeOfPayment;
     }
 }
-
-/*Previous tasks have been implemented #SHM
- *
- *
- * calculation of average expense still remains */

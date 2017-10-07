@@ -1,4 +1,3 @@
-
 import java.util.*;
 import java.lang.*;
 
@@ -18,7 +17,7 @@ public class index {
         }
         if(signInPos==-1) {
             System.out.println("No such username exists\nsign in again");
-            signIn();//re-signin
+            signIn();//re-signIn
         }
         System.out.println("Enter password");
         String password = input.nextLine();
@@ -96,6 +95,7 @@ public class index {
         System.out.println('\n');
         Scanner input = new Scanner(System.in);
         System.out.println("1. Sign in\n2. Sign up");
+
         int choice = input.nextInt();
         switch (choice) {
             case 1:
@@ -104,7 +104,7 @@ public class index {
             case 2:
                 signUp();
                 break;
-        }
 
+        }
     }
 }
