@@ -35,8 +35,7 @@ public class Person {
     private void viewExpenses(){
         System.out.println('\n');
         System.out.println("Expenses Details");
-        System.out.println("--Sr.-- "+" --Tag" +
-                "-- "+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
+        System.out.println("--Sr.-- "+" --Tag--" +" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
         for(int i=0;i<vectorOfExpenses.size();i++) {
             System.out.println((i+1)+"   "+vectorOfExpenses.elementAt(i).returnTag()+"   "+vectorOfExpenses.elementAt(i).returnDate()+"   "+vectorOfExpenses.elementAt(i).returnModeOfPayment()+"   "+vectorOfExpenses.elementAt(i).returnAmount());
         }
@@ -48,11 +47,13 @@ public class Person {
 
         System.out.println("--Sr.-- "+" --Category-- "+"--Tag--"+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
         for(int i=0;i<vectorOfExpenses.size();i++) {
-            System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returnType()+"   "vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
+            System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returnType()+"   "+ vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
         }
 
         System.out.println('\n');
         System.out.println('\n');
+
+/*
         System.out.println("Loan Details");
         System.out.println("--Bank-- "+" --Amount-- "+" --Rate-- "+" --Loan No.-- ");
         for(int i=0;i<vectorOfOwes_To.size();i++) {
@@ -69,7 +70,7 @@ public class Person {
             if(vectorOfOwes_To.elementAt(i).returnType().equals("Loan"))
                 continue;
             System.out.println(vectorOfOwes_To.elementAt(i).returnBankName()+"   "+vectorOfOwes_To.elementAt(i).returnAmount()+"   "+vectorOfOwes_To.elementAt(i).returnRate()+"   "+vectorOfOwes_To.elementAt(i).returnAccountNumber()+"   "+vectorOfOwes_To.elementAt(i).returnAccountType());
-        }
+        }*/
     }
     private void addLoan() {
         System.out.println('\n');
@@ -94,7 +95,6 @@ public class Person {
 
             System.out.println("Please Enter The Loan Number/Id");
             String loanNum=input.nextLine();
-            input.nextLine();
 
             tempLoan=new Owes_To("Loan",bankName,rate,amount,loanNum);
         }
@@ -106,11 +106,9 @@ public class Person {
 
             System.out.println("Please Enter The Type Of Account");
             String accountType=input.nextLine();
-            input.nextLine();
 
             System.out.println("Please Enter The Account Number");
             String accountNum=input.nextLine();
-            input.nextLine();
 
             System.out.println("Please Enter The Rate Of Interest");
             float rate=input.nextFloat();
@@ -127,7 +125,6 @@ public class Person {
 
         System.out.println("Please enter the category/tag of expenditure");
         String tag=input.nextLine();
-        input.nextLine();
 
 
         System.out.println("Please enter the amount of expenditure");
@@ -136,7 +133,6 @@ public class Person {
 
         System.out.println("Please enter the mode of payment of the expenditure");
         String modeOfPayment=input.nextLine();
-        input.nextLine();
 
 
         Date date=new Date();
@@ -151,7 +147,6 @@ public class Person {
 
         System.out.println("Please enter the category/tag of expenditure");
         String deltag = input.nextLine();
-        input.nextLine();
 
         int p = 1;
 
@@ -174,7 +169,7 @@ public class Person {
         int total=0;
 
         for(int i=0;i<vectorOfExpenses.size();i++)
-            total+=  vectorOfExpenses.elementAt(i).returnAmount();
+            total+= +vectorOfExpenses.elementAt(i).returnAmount();
 
         Date maxDate,minDate = new Date();
         Date tempDate = new Date();
@@ -192,18 +187,18 @@ public class Person {
         long diffInMillies = maxDate.getTime() - minDate.getTime();
 
         diffInMillies = diffInMillies /1000/60/60/24;
-
+            if(diffInMillies==0)
+                ++diffInMillies;
         System.out.println("The Avg Expense Per Day is  "+ total/diffInMillies + "\n");
 
     }
 
     private void addtransactionFriend() {
         System.out.println('\n');
-        Lend_Borrow tempFriend=null;
+        Lend_Borrow tempFriend;
 
         System.out.println("Please Enter The Name Of The Friend");
         String PersonName=input.nextLine();
-        input.nextLine();
 
         System.out.println("Please Enter The Amount");
         float amount=input.nextFloat();
@@ -211,16 +206,13 @@ public class Person {
 
         System.out.println("Please Enter the Type Borrow/Lend");
         String type=input.nextLine();
-        input.nextLine();
 
 
         System.out.println("Please Enter The Tag");
         String tag=input.nextLine();
-        input.nextLine();
 
         System.out.println("Please Enter The Mode Of Payment");
         String ModeOfPayment=input.nextLine();
-        input.nextLine();
 
         Date date=new Date();
 
@@ -237,7 +229,6 @@ public class Person {
 
         System.out.println("Please enter the name of Person");
         String deltag = input.nextLine();
-        input.nextLine();
 
         int p = 1;
 
@@ -268,7 +259,7 @@ public class Person {
             System.out.println("2. Delete Existing Expense Details");
             System.out.println("3. Add Details Of A New Loan Or A New Account");
             System.out.println("4. Add details of transactions among friends ");
-            System.out.println("5. View details of transactions among friends ");
+            System.out.println("5. Delete details of transactions among friends ");
             System.out.println("6. View Total Expenses, Deposits And Loans");
             System.out.println("7. Avg Expense per day");
             System.out.println("8. Log Out");

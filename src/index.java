@@ -96,7 +96,6 @@ public class index {
         System.out.println('\n');
         Scanner input = new Scanner(System.in);
         System.out.println("1. Sign in\n2. Sign up");
-        System.out.printf("\f");
 
         int choice = input.nextInt();
         switch (choice) {
