@@ -30,15 +30,13 @@ public class Person {
         }
 
         System.out.println('\n');
-        System.out.println('\n');
         System.out.println("Money Lent/Borrowed from friends");
 
         System.out.println("--Sr.-- "+" --Category-- "+"--Tag--"+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
-        for(int i=0;i<vectorOfExpenses.size();i++) {
+        for(int i=0;i<vectorOfLend_borrow.size();i++) {
             System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returnType()+"   "+ vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
         }
 
-        System.out.println('\n');
         System.out.println('\n');
 
         System.out.println("Loan Details");
@@ -138,13 +136,15 @@ public class Person {
         String deltag = input.nextLine();
 
         int p = 1;
-
+        Vector<Expense> tempVector=new Vector<>(0);
         for (int i = 0; i < vectorOfExpenses.size(); i++) {
             if (vectorOfExpenses.elementAt(i).returnTag().equals(deltag)) {
                 p = -1;
-                vectorOfExpenses.remove(i);
+                continue;
             }
+            tempVector.add(vectorOfExpenses.elementAt(i));
         }
+        vectorOfExpenses=tempVector;
         if (p == 1) {
             System.out.println("Not Found");
         }
@@ -155,27 +155,27 @@ public class Person {
 
     private void averageExpense(){
 
-        int total=0;
+        float total=0;
 
         for(int i=0;i<vectorOfExpenses.size();i++)
-            total+= +vectorOfExpenses.elementAt(i).returnAmount();
+            total+=vectorOfExpenses.elementAt(i).returnAmount();//there was a + here
 
-        Date maxDate,minDate = new Date();
+        Date maxDate,minDate;
         Date tempDate = new Date();
 
         maxDate = minDate = vectorOfExpenses.elementAt(0).returnDate();
 
         for(int i=0; i<vectorOfExpenses.size();i++)
         {
-            if(tempDate.after(minDate))
+            if(tempDate.before(minDate))
                 minDate=tempDate;
-            else if ( tempDate.before(maxDate))
+            else if ( tempDate.after(maxDate))
                 maxDate=tempDate;
         }
 
         long diffInMillies = maxDate.getTime() - minDate.getTime();
 
-        diffInMillies = diffInMillies /1000/60/60/24;
+        diffInMillies = ((((diffInMillies /1000)/60)/60)/24);
             if(diffInMillies==0)
                 ++diffInMillies;
         System.out.println("The Avg Expense Per Day is  "+ total/diffInMillies + "\n");
@@ -220,18 +220,20 @@ public class Person {
         String deltag = input.nextLine();
 
         int p = 1;
-
+        Vector<Lend_Borrow> tempVector=new Vector<>(0);
         for (int i = 0; i < vectorOfLend_borrow.size(); i++) {
             if (vectorOfLend_borrow.elementAt(i).returnpersonName().equals(deltag)) {
                 p = -1;
-                vectorOfLend_borrow.remove(i);
+                continue;
             }
+            tempVector.add(vectorOfLend_borrow.elementAt(i));
         }
+        vectorOfLend_borrow=tempVector;
         if (p == 1) {
             System.out.println("Not Found");
         }
         else {
-            System.out.println("Expense has been deleted");
+            System.out.println("Transaction among friends has been deleted has been deleted");
         }
     }
 
@@ -248,7 +250,7 @@ public class Person {
             System.out.println("3. Add Details Of A New Loan Or A New Account");
             System.out.println("4. Add details of transactions among friends ");
             System.out.println("5. Delete details of transactions among friends ");
-            System.out.println("6. View Total Expenses, Deposits And Loans");
+            System.out.println("6. View Total Expenses, Deposits And Loans as well as transactions among friends");
             System.out.println("7. Avg Expense per day");
             System.out.println("8. Log Out");
             int expenseChoice = input.nextInt();
