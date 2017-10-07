@@ -50,15 +50,5 @@ public class Owes_To {
         this.accountNum=accountNum;
         this.accountType=accountType;
     }
-
 }
-
-/* Previous tasks have been achieved #SHM
- *
- *
- * Tasks remaining to be implemented
- * status of loan payment
- * date of loan or deposit taken
- * */
-
 

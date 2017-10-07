@@ -1,6 +1,4 @@
 import java.util.Date;
-import java.util.*;
-
 
 public class Expense {
 
@@ -34,8 +32,3 @@ public class Expense {
         return modeOfPayment;
     }
 }
-
-/*Previous tasks have been implemented #SHM
- *
- *
- * calculation of average expense still remains */

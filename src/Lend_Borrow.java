@@ -9,7 +9,6 @@ public class Lend_Borrow {
     private Date date = new Date();
     private String ModeOfPayment;
 
-
     public String returnpersonName() {
         return personName;
     }
@@ -24,7 +23,6 @@ public class Lend_Borrow {
     }
     public String returnModeOfPayment() {return ModeOfPayment;}
     public Date returnDate() {return date;}
-
 
     /*Constructor for loan*/
     Lend_Borrow (String type,String personName,float amount,String tag,String ModeOfPayment,Date date) {

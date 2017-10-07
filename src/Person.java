@@ -1,17 +1,6 @@
-//public class Person {
-//    Expense [] e; //convert it to a vector
-//    Owes_To [] o; //convert to a vector
-//    int current_balance;
-//    boolean debt;
-//    float avg;
-//}
-//the above mentioned tasks are yet to be implemented
-
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-
-
 
 public class Person {
 
@@ -40,7 +29,6 @@ public class Person {
             System.out.println((i+1)+"   "+vectorOfExpenses.elementAt(i).returnTag()+"   "+vectorOfExpenses.elementAt(i).returnDate()+"   "+vectorOfExpenses.elementAt(i).returnModeOfPayment()+"   "+vectorOfExpenses.elementAt(i).returnAmount());
         }
 
-
         System.out.println('\n');
         System.out.println('\n');
         System.out.println("Money Lent/Borrowed from friends");
@@ -53,7 +41,6 @@ public class Person {
         System.out.println('\n');
         System.out.println('\n');
 
-/*
         System.out.println("Loan Details");
         System.out.println("--Bank-- "+" --Amount-- "+" --Rate-- "+" --Loan No.-- ");
         for(int i=0;i<vectorOfOwes_To.size();i++) {
@@ -70,8 +57,9 @@ public class Person {
             if(vectorOfOwes_To.elementAt(i).returnType().equals("Loan"))
                 continue;
             System.out.println(vectorOfOwes_To.elementAt(i).returnBankName()+"   "+vectorOfOwes_To.elementAt(i).returnAmount()+"   "+vectorOfOwes_To.elementAt(i).returnRate()+"   "+vectorOfOwes_To.elementAt(i).returnAccountNumber()+"   "+vectorOfOwes_To.elementAt(i).returnAccountType());
-        }*/
+        }
     }
+
     private void addLoan() {
         System.out.println('\n');
         Owes_To tempLoan=null;
@@ -119,6 +107,7 @@ public class Person {
         }
         vectorOfOwes_To.add(tempLoan);
     }
+
     private void addExpense() {
         System.out.println('\n');
         Expense tempExpense;
@@ -246,7 +235,6 @@ public class Person {
         }
     }
 
-
     public void loggedIn () {
 
         System.out.println('\n');
@@ -294,7 +282,6 @@ public class Person {
                     return;
             }
         }while(true);
-
     }
 
     public boolean verify(String userName,String password){
