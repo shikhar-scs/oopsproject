@@ -1,3 +1,4 @@
+import javax.swing.plaf.synth.SynthEditorPaneUI;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -30,15 +31,13 @@ public class Person {
         }
 
         System.out.println('\n');
-        System.out.println('\n');
         System.out.println("Money Lent/Borrowed from friends");
 
         System.out.println("--Sr.-- "+" --Category-- "+"--Tag--"+" --Date-- "+" --Mode Of Payment-- "+" --Amount-- ");
-        for(int i=0;i<vectorOfExpenses.size();i++) {
+        for(int i=0;i<vectorOfLend_borrow.size();i++) {
             System.out.println((i+1)+"   "+vectorOfLend_borrow.elementAt(i).returnType()+"   "+ vectorOfLend_borrow.elementAt(i).returntag()+"   "+vectorOfLend_borrow.elementAt(i).returnDate()+"   "+vectorOfLend_borrow.elementAt(i).returnModeOfPayment()+"   "+vectorOfLend_borrow.elementAt(i).returnAmount());
         }
 
-        System.out.println('\n');
         System.out.println('\n');
 
         System.out.println("Loan Details");
@@ -130,52 +129,108 @@ public class Person {
         vectorOfExpenses.add(tempExpense);
     }
 
-    private void deleteExpense() {
-
+    private void deleteLoan() {
         System.out.println('\n');
 
-        System.out.println("Please enter the category/tag of expenditure");
-        String deltag = input.nextLine();
+        System.out.println("Please enter the loan number of the loan you want to delete");
+        String delId = input.nextLine();
 
         int p = 1;
-
-        for (int i = 0; i < vectorOfExpenses.size(); i++) {
-            if (vectorOfExpenses.elementAt(i).returnTag().equals(deltag)) {
-                p = -1;
-                vectorOfExpenses.remove(i);
+        Vector<Owes_To> tempVector=new Vector<>(0);
+        for (int i = 0; i < vectorOfOwes_To.size(); i++) {
+            if (vectorOfOwes_To.elementAt(i).returnType().equals("Loan")) {
+                if (vectorOfOwes_To.elementAt(i).returnLoanNumber().equals(delId)) {
+                    p = -1;
+                    continue;
+                }
             }
+            tempVector.add(vectorOfOwes_To.elementAt(i));
         }
+        vectorOfOwes_To=tempVector;
         if (p == 1) {
             System.out.println("Not Found");
         }
         else {
-            System.out.println("Expense has been deleted");
+            System.out.println("The desired loan record has been deleted");
+        }
+    }
+    private void deleteAccount() {
+        System.out.println('\n');
+
+        System.out.println("Please enter the account number of the deposit you want to delete");
+        String delId = input.nextLine();
+
+        int p = 1;
+        Vector<Owes_To> tempVector=new Vector<>(0);
+        for (int i = 0; i < vectorOfOwes_To.size(); i++) {
+            if(vectorOfOwes_To.elementAt(i).returnType().equals("Deposit")) {
+                if (vectorOfOwes_To.elementAt(i).returnAccountNumber().equals(delId)) {
+                    p = -1;
+                    continue;
+                }
+            }
+            tempVector.add(vectorOfOwes_To.elementAt(i));
+        }
+        vectorOfOwes_To=tempVector;
+        if (p == 1) {
+            System.out.println("Not Found");
+        }
+        else {
+            System.out.println("The desired account record has been deleted");
+        }
+    }
+
+    private void deleteExpense() {
+
+        System.out.println('\n');
+
+        System.out.println("Please enter serial no. of the Expense you want to delete");
+        int delId = input.nextInt();
+        input.nextLine();
+
+        int p = 1;
+        Vector<Expense> tempVector=new Vector<>(0);
+        for (int i = 0; i < vectorOfExpenses.size(); i++) {
+            if ((i+1)==delId) {
+                p = -1;
+                continue;
+            }
+            tempVector.add(vectorOfExpenses.elementAt(i));
+        }
+        vectorOfExpenses=tempVector;
+        if (p == 1) {
+            System.out.println("Not Found");
+        }
+        else {
+            System.out.println("The desired serial number of expense has been deleted");
         }
     }
 
     private void averageExpense(){
 
-        int total=0;
+        float total=0;
 
         for(int i=0;i<vectorOfExpenses.size();i++)
-            total+= +vectorOfExpenses.elementAt(i).returnAmount();
-
-        Date maxDate,minDate = new Date();
+            total+=vectorOfExpenses.elementAt(i).returnAmount();
+        for(int i=0;i<vectorOfLend_borrow.size();i++) {
+            total+=vectorOfLend_borrow.elementAt(i).returnAmount();
+        }
+        Date maxDate,minDate;
         Date tempDate = new Date();
 
         maxDate = minDate = vectorOfExpenses.elementAt(0).returnDate();
 
         for(int i=0; i<vectorOfExpenses.size();i++)
         {
-            if(tempDate.after(minDate))
-                minDate=tempDate;
-            else if ( tempDate.before(maxDate))
+            if(tempDate.before(minDate))
                 maxDate=tempDate;
+            else if ( tempDate.after(maxDate))
+                minDate=tempDate;
         }
 
         long diffInMillies = maxDate.getTime() - minDate.getTime();
 
-        diffInMillies = diffInMillies /1000/60/60/24;
+        diffInMillies = ((((diffInMillies /1000)/60)/60)/24);
             if(diffInMillies==0)
                 ++diffInMillies;
         System.out.println("The Avg Expense Per Day is  "+ total/diffInMillies + "\n");
@@ -216,22 +271,24 @@ public class Person {
 
         System.out.println('\n');
 
-        System.out.println("Please enter the name of Person");
-        String deltag = input.nextLine();
+        System.out.println("Please enter the serial number of the transaction");
+        int delId = input.nextInt();
 
         int p = 1;
-
+        Vector<Lend_Borrow> tempVector=new Vector<>(0);
         for (int i = 0; i < vectorOfLend_borrow.size(); i++) {
-            if (vectorOfLend_borrow.elementAt(i).returnpersonName().equals(deltag)) {
+            if ((i+1)==delId) {
                 p = -1;
-                vectorOfLend_borrow.remove(i);
+                continue;
             }
+            tempVector.add(vectorOfLend_borrow.elementAt(i));
         }
+        vectorOfLend_borrow=tempVector;
         if (p == 1) {
             System.out.println("Not Found");
         }
         else {
-            System.out.println("Expense has been deleted");
+            System.out.println("The desired transaction number has been deleted");
         }
     }
 
@@ -243,14 +300,20 @@ public class Person {
         //displaying menu after getting logged in
         do {
             System.out.println('\n');
+            System.out.println("--ADD ZONE--\n");
             System.out.println("1. Add New Expense Details");
-            System.out.println("2. Delete Existing Expense Details");
+            System.out.println("2. Add details of transactions among friends ");
             System.out.println("3. Add Details Of A New Loan Or A New Account");
-            System.out.println("4. Add details of transactions among friends ");
+            System.out.println("\n--DELETE ZONE--\n");
+            System.out.println("4. Delete Existing Expense Details");
             System.out.println("5. Delete details of transactions among friends ");
-            System.out.println("6. View Total Expenses, Deposits And Loans");
-            System.out.println("7. Avg Expense per day");
-            System.out.println("8. Log Out");
+            System.out.println("6. Delete loan record");
+            System.out.println("7. Delete account record");
+            System.out.println("\n--VIEW ZONE--\n");
+            System.out.println("8. View Total Expenses, Deposits And Loans as well as transactions among friends");
+            System.out.println("9. Avg Expense per day");
+            System.out.println("\n--EXIT ZONE--\n");
+            System.out.println("10. Log Out");
             int expenseChoice = input.nextInt();
             input.nextLine();
 
@@ -260,25 +323,31 @@ public class Person {
                 case 1:
                     addExpense();
                     break;
-                case 2:
+                case 4:
                     deleteExpense();
                     break;
                 case 3:
                     addLoan();
                     break;
-                case 4:
+                case 2:
                     addtransactionFriend();
                     break;
                 case 5:
                     deletetransactionFriend();
                     break;
                 case 6:
-                    viewExpenses();
+                    deleteLoan();
                     break;
                 case 7:
-                    averageExpense();
+                    deleteAccount();
                     break;
                 case 8:
+                    viewExpenses();
+                    break;
+                case 9:
+                    averageExpense();
+                    break;
+                case 10:
                     return;
             }
         }while(true);
