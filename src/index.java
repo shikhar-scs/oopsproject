@@ -3,6 +3,7 @@ import java.util.*;
 import java.lang.*;
 
 public class index {
+    static boolean bool=true;
     private static Vector<Person> vectorOfPersons=new Vector<>(0);
     static Scanner input=new Scanner(System.in);
     private static int idGenerator = 0;
@@ -452,13 +453,14 @@ public class index {
             if(file.available()==0){
                 return;
             }
+            System.out.println("Existing users");
             while (file.available()>0){
                 Person p;
                 p=(Person) i.readObject();
                 if(p==null){
                     break;
                 }
-//                System.out.println(p.returnPersonId()+" "+p.returnPersonName());
+                System.out.println(p.returnPersonId()+" "+p.returnPersonName());
                 vectorOfPersons.add(p);
                 line++;
             }
@@ -479,14 +481,14 @@ public class index {
     public static void main(String[] args) { //my main function where program would be run from
         System.out.println('\n');
         Scanner input = new Scanner(System.in);
-        System.out.println("0. Extract from File\n1. Sign in\n2. Sign up\n3. Exit");
+        if(bool){
+            enter();
+            bool=false;
+        }
+        System.out.println("1. Sign in\n2. Sign up\n3. Exit");
 
         int choice = input.nextInt();
         switch (choice) {
-            case 0:
-                enter();//should only be used once not more than once
-                main(null);
-                break;
             case 1:
                 signIn();
                 break;
