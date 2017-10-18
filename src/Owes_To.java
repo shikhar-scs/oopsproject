@@ -1,6 +1,6 @@
+import java.io.Serializable;
 
-
-public class Owes_To {
+public class Owes_To implements Serializable{
 
     private String bankName;
     private String type;/*whether a person wants to store as a deposit or take loan*/

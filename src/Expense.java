@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.Date;
 
-public class Expense {
+public class Expense implements Serializable{
 
     private String tag;
     private String modeOfPayment;
