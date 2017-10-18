@@ -8,7 +8,7 @@ This app will keep track of any loans you have taken from a bank and also the mo
 
 Though its still in the development stage, it'll be made available soon for others :D
 
-further we will be looking forward to link it with a responsive website. So please stay tuned.
+Further we will be looking forward to link it with a responsive website. So please stay tuned.
 
 Happy Tracking :)
 cheers!!!
