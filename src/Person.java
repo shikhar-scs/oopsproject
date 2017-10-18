@@ -1,4 +1,3 @@
-import javax.swing.plaf.synth.SynthEditorPaneUI;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -9,6 +8,7 @@ public class Person implements Serializable{
     private String personName;
     private String userName;
     private String password;
+
     private Vector<Expense> vectorOfExpenses=new Vector<>(0);
     private Vector<Owes_To> vectorOfOwes_To=new Vector<>(0);
     private Vector<Lend_Borrow> vectorOfLend_borrow=new Vector<>(0);
@@ -26,13 +26,14 @@ public class Person implements Serializable{
         else
             return false;
     }
+
     public void addExpenses(Vector<Expense> vectorOfExpenses){
         this.vectorOfExpenses=vectorOfExpenses;
     }
+
     public String returnUserName() {
         return userName;
     }
-
     public String returnPersonName() {
         return personName;
     }
@@ -54,4 +55,5 @@ public class Person implements Serializable{
     public Vector<Lend_Borrow> returnVectorOfLend_Borrow(){
         return vectorOfLend_borrow;
     }
+
 }

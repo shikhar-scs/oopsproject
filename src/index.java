@@ -3,6 +3,7 @@ import java.util.*;
 import java.lang.*;
 
 public class index {
+
     static boolean bool=true;
     private static Vector<Person> vectorOfPersons=new Vector<>(0);
     static Scanner input=new Scanner(System.in);
@@ -102,7 +103,6 @@ public class index {
             System.out.println("The desired transaction number has been deleted");
         }
     }
-
     private static void deleteAccount(Person p) {
         System.out.println('\n');
 
@@ -282,8 +282,6 @@ public class index {
             System.out.println("The desired serial number of expense has been deleted");
         }
     }
-
-
     public static void loggedIn (Person p) {
 
         System.out.println('\n');
@@ -291,8 +289,7 @@ public class index {
         System.out.println("User Id : "+p.returnPersonId());
         //displaying menu after getting logged in
         do {
-            System.out.println('\n');
-            System.out.println("--ADD ZONE--\n");
+            System.out.println("\n--ADD ZONE--\n");
             System.out.println("1. Add New Expense Details");
             System.out.println("2. Add details of transactions among friends ");
             System.out.println("3. Add Details Of A New Loan Or A New Account");
@@ -374,7 +371,6 @@ public class index {
             main(null);
         }
     }
-
     private static void signUp() {
 
         System.out.println('\n');
@@ -422,7 +418,7 @@ public class index {
         }
         //if password cross-verification true then....
         System.out.println('\n');
-        System.out.println("Do you want to sign in now");
+        System.out.println("Do you want to sign in now? (yes/no)");
         String decision=input.nextLine();
         if(decision.equalsIgnoreCase("yes"))
             signIn();

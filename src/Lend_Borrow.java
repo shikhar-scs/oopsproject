@@ -24,7 +24,6 @@ public class Lend_Borrow implements Serializable{
     }
     public String returnModeOfPayment() {return ModeOfPayment;}
     public Date returnDate() {return date;}
-
     /*Constructor for loan*/
     Lend_Borrow (String type,String personName,float amount,String tag,String ModeOfPayment,Date date) {
         this.type=type;

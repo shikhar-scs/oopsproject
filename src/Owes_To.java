@@ -51,4 +51,3 @@ public class Owes_To implements Serializable{
         this.accountType=accountType;
     }
 }
-
