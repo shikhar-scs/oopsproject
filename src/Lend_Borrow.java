@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.*;
 
-public class Lend_Borrow {
+public class Lend_Borrow implements Serializable{
 
     private String personName;
     private String type;/*whether a person has borrowed or lent money*/
