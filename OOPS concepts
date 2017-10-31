@@ -1,0 +1,49 @@
+ENCAPSULATION :
+
+Encapsulation in java is a process of wrapping code and data together into a single unit, for example capsule i.e. mixed of several medicines. We can create a fully encapsulated class in java by making all the data members of the class private. Now we can use setter and getter methods to set and get the data in it.
+
+By providing only setter or getter method, you can make the class read-only or write-only.
+
+It provides you the control over the data. Suppose you want to set the value of id i.e. greater than 100 only, you can write the logic inside the setter method.
+
+In our project we have used multiple classes : Index, Person, Expense, Lend_Borrow and Owes_to. Several classes exist for several purposes and they have been brought together by Instantiating their objects in the required classes respectively. Moreover the necessary getter and setter functions have been introduced, keeping all sensitive data abstracted (hidden from bad elements).
+
+INHERITENCE :
+
+Inheritance in java is a mechanism in which one object acquires all the properties and behaviors of parent object.
+
+The idea behind inheritance in java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of parent class, and you can add new methods and fields also.
+
+Inheritance represents the IS-A relationship, also known as parent-child relationship.
+
+Why use inheritance in java
+
+For Method Overriding (so runtime polymorphism can be achieved).
+For Code Reusability.
+
+
+The keyword 'implements' is used to inherit any parent class. Implement the Serializable interface when you want to be able to convert an instance of a class into a series of bytes or when you think that a Serializable object might reference an instance of your class. Serializable classes are useful when you want to persist instances of them or send them over a wire. Instances of Serializable classes can be easily transmitted. Serialization does have some security consequences, however.
+
+Serializable has been repeatedly used in every class barring the class Index.
+
+ABSTRACTION :
+
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+
+Another way, it shows only important things to the user and hides the internal details for example sending sms, you just type the text and send the message. You don't know the internal processing about the message delivery.
+
+Abstraction lets you focus on what the object does instead of how it does it.
+
+All the sensitive information regarding the user has been made PRIVATE and numerous setter and getter functions have been used to implement the same. MEmber functions have been made public to enable them to access private members of their own class from a different class where the object of their own class has been declared.
+
+FILE HANDLING ::
+
+File Handing in java comes under IO operations. Java IO package java.io classes are specially provided for file handling in java.
+
+File handling in Java means that how to read from and write to file in Java. Java provides the basic I/O package for reading and writing streams. java.io package allows to do all Input and Output tasks in Java .
+
+How to perform file handling in Java
+
+Java provides the java.io package for file handling in Java. java.io package contains the inbuilt Java classes and predefined methods using which you can read from and write data to file.
+
+File Handling has been implemented to store all the information regarding a user and also the details of his/her transactions and whatever functionality he has been provided.
