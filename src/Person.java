@@ -8,16 +8,20 @@ public class Person implements Serializable{
     private String personName;
     private String userName;
     private String password;
+    private int budget;
+    private boolean debt;
 
     private Vector<Expense> vectorOfExpenses=new Vector<>(0);
     private Vector<Owes_To> vectorOfOwes_To=new Vector<>(0);
     private Vector<Lend_Borrow> vectorOfLend_borrow=new Vector<>(0);
 
-    public Person(String personName,String userName,String password,int personId) {
+    public Person(String personName,String userName,String password,int personId,int budget,boolean debt) {
         this.personName=personName;
         this.userName=userName;
         this.password=password;
         this.personId=personId;
+        this.budget=budget;
+        this.debt=debt;
     }
 
     public boolean verify(String userName,String password){
@@ -34,24 +38,43 @@ public class Person implements Serializable{
     public String returnUserName() {
         return userName;
     }
+
     public String returnPersonName() {
         return personName;
     }
+
     public int returnPersonId(){
         return personId;
     }
+
+    public int returnBudget(){
+        return budget;
+    }
+
+    public boolean returnDebt(){
+        return debt;
+    }
+
+    public void setDebt(boolean debt){
+        this.debt = debt;
+    }
+
     public Vector<Expense> returnVectorOfExpenses(){
         return vectorOfExpenses;
     }
+
     public void addOwes_To(Vector<Owes_To> vectorOfOwes_To){
         this.vectorOfOwes_To=vectorOfOwes_To;
     }
+
     public Vector<Owes_To> returnVectorOfOwes_to(){
         return vectorOfOwes_To;
     }
+
     public void addLend_Borrow(Vector<Lend_Borrow> vectorOfLend_borrow){
         this.vectorOfLend_borrow=vectorOfLend_borrow;
     }
+
     public Vector<Lend_Borrow> returnVectorOfLend_Borrow(){
         return vectorOfLend_borrow;
     }

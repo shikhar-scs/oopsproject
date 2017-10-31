@@ -13,21 +13,27 @@ public class Owes_To implements Serializable{
     public String returnBankName() {
         return bankName;
     }
+
     public String returnType() {
         return type;
     }
+
     public String returnAccountType() {
         return accountType;
     }
+
     public float returnRate() {
         return rate;
     }
+
     public float returnAmount() {
         return amount;
     }
+
     public String returnAccountNumber() {
         return accountNum;
     }
+
     public String returnLoanNumber() {
         return loanNum;
     }

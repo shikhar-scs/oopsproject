@@ -8,21 +8,27 @@ public class index {
     private static Vector<Person> vectorOfPersons=new Vector<>(0);
     static Scanner input=new Scanner(System.in);
     private static int idGenerator = 0;
+
     private static void averageExpense(Person p){
 
-        float total=0;
+        //Used for calculating averageExpenses
+        float total=totalExpenses(p);
+
+        //Declaring Vector of Expenses
         Vector<Expense> vectorOfExpenses=p.returnVectorOfExpenses();
+
+        //Declaring Vector of Lend_Borrow
         Vector<Lend_Borrow> vectorOfLend_borrow=p.returnVectorOfLend_Borrow();
-        for(int i=0;i<vectorOfExpenses.size();i++)
-            total+=vectorOfExpenses.elementAt(i).returnAmount();
-        for(int i=0;i<vectorOfLend_borrow.size();i++) {
-            total+=vectorOfLend_borrow.elementAt(i).returnAmount();
-        }
+
+
+
+        //Dates for calculating difference for averageExpense
         Date maxDate,minDate;
         Date tempDate = new Date();
 
         maxDate = minDate = vectorOfExpenses.elementAt(0).returnDate();
 
+       //Finding and Initialising Max and Min Dates from the master Expenses table
         for(int i=0; i<vectorOfExpenses.size();i++)
         {
             if(tempDate.before(minDate))
@@ -32,13 +38,12 @@ public class index {
         }
 
         long diffInMillies = maxDate.getTime() - minDate.getTime();
-
         diffInMillies = ((((diffInMillies /1000)/60)/60)/24);
         if(diffInMillies==0)
             ++diffInMillies;
         System.out.println("The Avg Expense Per Day is  "+ total/diffInMillies + "\n");
-
     }
+
     private static void viewExpenses(Person p){
         System.out.println('\n');
         Vector<Expense> vectorOfExpenses=p.returnVectorOfExpenses();
@@ -77,6 +82,7 @@ public class index {
             System.out.println(vectorOfOwes_To.elementAt(i).returnBankName()+"   "+vectorOfOwes_To.elementAt(i).returnAmount()+"   "+vectorOfOwes_To.elementAt(i).returnRate()+"   "+vectorOfOwes_To.elementAt(i).returnAccountNumber()+"   "+vectorOfOwes_To.elementAt(i).returnAccountType());
         }
     }
+
     private static void deletetransactionFriend(Person p) {
 
         System.out.println('\n');
@@ -103,6 +109,7 @@ public class index {
             System.out.println("The desired transaction number has been deleted");
         }
     }
+
     private static void deleteAccount(Person p) {
         System.out.println('\n');
 
@@ -130,6 +137,7 @@ public class index {
             System.out.println("The desired account record has been deleted");
         }
     }
+
     private static void addtransactionFriend(Person p) {
         System.out.println('\n');
         Lend_Borrow tempFriend;
@@ -159,6 +167,7 @@ public class index {
         vectorOfLend_borrow.add(tempFriend);
         p.addLend_Borrow(vectorOfLend_borrow);
     }
+
     private static void deleteLoan(Person p) {
         System.out.println('\n');
 
@@ -186,6 +195,7 @@ public class index {
             System.out.println("The desired loan record has been deleted");
         }
     }
+
     private static void addLoan(Person p) {
         System.out.println('\n');
         Owes_To tempLoan=null;
@@ -234,6 +244,7 @@ public class index {
         vectorOfOwes_To.add(tempLoan);
         p.addOwes_To(vectorOfOwes_To);
     }
+
     private static void addExpense(Person p) {
         System.out.println('\n');
         Expense tempExpense;
@@ -256,6 +267,67 @@ public class index {
         vectorOfExpenses.add(tempExpense);
         p.addExpenses(vectorOfExpenses);
     }
+
+    private static float totalExpenses(Person p){
+
+        //Used for calculating averageExpenses
+        float total = 0;
+
+        //Declaring Vector of Expenses
+        Vector<Expense> vectorOfExpenses = p.returnVectorOfExpenses();
+
+        //Declaring Vector of Lend_Borrow
+        Vector<Lend_Borrow> vectorOfLend_borrow = p.returnVectorOfLend_Borrow();
+
+        //Calculating total for averageExpenses
+        for (int i = 0; i < vectorOfExpenses.size(); i++)
+            total += vectorOfExpenses.elementAt(i).returnAmount();
+
+        //Calculating total for averageExpenses
+        for (int i = 0; i < vectorOfLend_borrow.size(); i++) {
+            total += vectorOfLend_borrow.elementAt(i).returnAmount();
+        }
+
+        return total;
+    }
+
+    private static void setDebt(Person p) {
+        System.out.println('\n');
+
+        //Used for calculating averageExpenses
+        float total = totalExpenses(p);
+
+        if(total>p.returnBudget()) {
+            p.setDebt(true);
+//            System.out.println("You are under debt. You currently owe others " + (total - p.returnBudget()) + "rupees");
+        }
+
+        else if(total==p.returnBudget()) {
+            p.setDebt(true);
+//            System.out.println("You've managed your budget and expenses to be exactly equal (should you be sad or happy ? XD)");
+        }
+        else {
+            p.setDebt(false);
+//            System.out.println("You currently can spend " + (p.returnBudget() - total) + "rupees");
+        }
+    }
+
+    private static void showDebt(Person p) {
+        boolean currentDebt = p.returnDebt();
+
+        //Used for calculating averageExpenses
+        float total = totalExpenses(p);
+
+        if(!currentDebt){
+        System.out.println("You are under debt. You currently owe others " + (total - p.returnBudget()) + "rupees");
+         }
+
+        else {
+        System.out.println("You currently can spend " + (p.returnBudget() - total) + "rupees");
+        }
+
+    }
+
     private static void deleteExpense(Person p) {
 
         System.out.println('\n');
@@ -282,6 +354,7 @@ public class index {
             System.out.println("The desired serial number of expense has been deleted");
         }
     }
+
     public static void loggedIn (Person p) {
 
         System.out.println('\n');
@@ -301,8 +374,9 @@ public class index {
             System.out.println("\n--VIEW ZONE--\n");
             System.out.println("8. View Total Expenses, Deposits And Loans as well as transactions among friends");
             System.out.println("9. Avg Expense per day");
+            System.out.println("10. Debt or not :'( ");
             System.out.println("\n--EXIT ZONE--\n");
-            System.out.println("10. Log Out");
+            System.out.println("11. Log Out");
             int expenseChoice = input.nextInt();
             input.nextLine();
 
@@ -337,10 +411,15 @@ public class index {
                     averageExpense(p);
                     break;
                 case 10:
+                    setDebt(p);
+                    showDebt(p);
+
+                case 11:
                     return;
             }
         }while(true);
     }
+
     private static void signIn() {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter UserName");
@@ -371,6 +450,7 @@ public class index {
             main(null);
         }
     }
+
     private static void signUp() {
 
         System.out.println('\n');
@@ -409,7 +489,11 @@ public class index {
 
         if(re_password.equals(password)) { //checking password verification
 
-            tempPerson = new Person(name, userName, password, ++idGenerator);//tempPerson takes new credentials
+            System.out.println("Please enter your current Budget");
+            int budget = input.nextInt();
+            input.nextLine();
+            boolean debt=false;
+            tempPerson = new Person(name, userName, password, ++idGenerator,budget,debt);//tempPerson takes new credentials
             vectorOfPersons.add(tempPerson);//pushing into master vector array
         }
         else {
@@ -425,6 +509,7 @@ public class index {
         else
             main(null);//return back to main menu
     }
+
     public static void leave(){
         try {
             FileOutputStream file = new FileOutputStream(new File("data.txt"));
@@ -441,39 +526,41 @@ public class index {
             e.printStackTrace();
         }
     }
+
     public static void enter(){
-        try{
-            int line=0;
-            FileInputStream file = new FileInputStream(new File("data.txt"));
-            ObjectInputStream i=new ObjectInputStream(file);
-            if(file.available()==0){
-                return;
-            }
-            System.out.println("Existing users");
-            while (file.available()>0){
-                Person p;
-                p=(Person) i.readObject();
-                if(p==null){
-                    break;
+            try{
+                int line=0;
+                FileInputStream file = new FileInputStream(new File("data.txt"));
+                ObjectInputStream i=new ObjectInputStream(file);
+                if(file.available()==0){
+                    return;
                 }
-                System.out.println(p.returnPersonId()+" "+p.returnPersonName());
-                vectorOfPersons.add(p);
-                line++;
+                System.out.println("Existing users");
+                while (file.available()>0){
+                    Person p;
+                    p=(Person) i.readObject();
+                    if(p==null){
+                        break;
+                    }
+                    System.out.println(p.returnPersonId()+" "+p.returnPersonName());
+                    vectorOfPersons.add(p);
+                    line++;
+                }
+                i.close();
+                file.close();
+                idGenerator+=line;
             }
-            i.close();
-            file.close();
-            idGenerator+=line;
+            catch (FileNotFoundException fe){
+                fe.printStackTrace();
+            }
+            catch (ClassNotFoundException ce){
+                ce.printStackTrace();
+            }
+            catch (IOException ioe){
+                ioe.printStackTrace();
+            }
         }
-        catch (FileNotFoundException fe){
-            fe.printStackTrace();
-        }
-        catch (ClassNotFoundException ce){
-            ce.printStackTrace();
-        }
-        catch (IOException ioe){
-            ioe.printStackTrace();
-        }
-    }
+
     public static void main(String[] args) { //my main function where program would be run from
         System.out.println('\n');
         Scanner input = new Scanner(System.in);
@@ -481,6 +568,7 @@ public class index {
             enter();
             bool=false;
         }
+
         System.out.println("1. Sign in\n2. Sign up\n3. Exit");
 
         int choice = input.nextInt();
@@ -494,7 +582,6 @@ public class index {
             case 3:
                 leave();
                 break;
-
         }
     }
 }
