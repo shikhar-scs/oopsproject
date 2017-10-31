@@ -9,18 +9,40 @@ public class index {
     static Scanner input=new Scanner(System.in);
     private static int idGenerator = 0;
 
+
+    private static float totalExpenses(Person p){
+
+        //Used for calculating averageExpenses
+        float total = 0;
+
+        //Declaring Vector of Expenses
+        Vector<Expense> vectorOfExpenses = p.returnVectorOfExpenses();
+
+        //Declaring Vector of Lend_Borrow
+        Vector<Lend_Borrow> vectorOfLend_borrow = p.returnVectorOfLend_Borrow();
+
+        //Calculating total for averageExpenses
+        for (int i = 0; i < vectorOfExpenses.size(); i++)
+            total += vectorOfExpenses.elementAt(i).returnAmount();
+
+        //Calculating total for averageExpenses
+        for (int i = 0; i < vectorOfLend_borrow.size(); i++) {
+            total += vectorOfLend_borrow.elementAt(i).returnAmount();
+        }
+
+        return total;
+    }
+
     private static void averageExpense(Person p){
 
         //Used for calculating averageExpenses
         float total=totalExpenses(p);
 
-        //Declaring Vector of Expenses
+//        //Declaring Vector of Expenses
         Vector<Expense> vectorOfExpenses=p.returnVectorOfExpenses();
-
-        //Declaring Vector of Lend_Borrow
-        Vector<Lend_Borrow> vectorOfLend_borrow=p.returnVectorOfLend_Borrow();
-
-
+//
+//        //Declaring Vector of Lend_Borrow
+//        Vector<Lend_Borrow> vectorOfLend_borrow=p.returnVectorOfLend_Borrow();
 
         //Dates for calculating difference for averageExpense
         Date maxDate,minDate;
@@ -268,29 +290,6 @@ public class index {
         p.addExpenses(vectorOfExpenses);
     }
 
-    private static float totalExpenses(Person p){
-
-        //Used for calculating averageExpenses
-        float total = 0;
-
-        //Declaring Vector of Expenses
-        Vector<Expense> vectorOfExpenses = p.returnVectorOfExpenses();
-
-        //Declaring Vector of Lend_Borrow
-        Vector<Lend_Borrow> vectorOfLend_borrow = p.returnVectorOfLend_Borrow();
-
-        //Calculating total for averageExpenses
-        for (int i = 0; i < vectorOfExpenses.size(); i++)
-            total += vectorOfExpenses.elementAt(i).returnAmount();
-
-        //Calculating total for averageExpenses
-        for (int i = 0; i < vectorOfLend_borrow.size(); i++) {
-            total += vectorOfLend_borrow.elementAt(i).returnAmount();
-        }
-
-        return total;
-    }
-
     private static void setDebt(Person p) {
         System.out.println('\n');
 
@@ -413,6 +412,7 @@ public class index {
                 case 10:
                     setDebt(p);
                     showDebt(p);
+                    break;
 
                 case 11:
                     return;
