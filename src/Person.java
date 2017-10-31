@@ -15,7 +15,7 @@ public class Person implements Serializable{
     private Vector<Owes_To> vectorOfOwes_To=new Vector<>(0);
     private Vector<Lend_Borrow> vectorOfLend_borrow=new Vector<>(0);
 
-    public Person(String personName,String userName,String password,int personId,int budget,boolean debt) {
+    public Person(String personName,String userName,String password,int personId,int budget,boolean debt)   {
         this.personName=personName;
         this.userName=userName;
         this.password=password;
