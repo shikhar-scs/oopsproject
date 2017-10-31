@@ -9,7 +9,6 @@ public class index {
     static Scanner input=new Scanner(System.in);
     private static int idGenerator = 0;
 
-
     private static float totalExpenses(Person p){
 
         //Used for calculating averageExpenses
@@ -569,7 +568,7 @@ public class index {
             bool=false;
         }
 
-        System.out.println("1. Sign in\n2. Sign up\n3. Exit");
+        System.out.println("CHOOSE \n 1. Sign in\n2. Sign up\n3. Exit");
 
         int choice = input.nextInt();
         switch (choice) {
