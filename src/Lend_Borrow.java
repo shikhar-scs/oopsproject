@@ -13,16 +13,21 @@ public class Lend_Borrow implements Serializable{
     public String returnpersonName() {
         return personName;
     }
+
     public String returnType() {
         return type;
     }
+
     public float returnAmount() {
         return amount;
     }
+
     public String returntag() {
         return tag;
     }
+
     public String returnModeOfPayment() {return ModeOfPayment;}
+
     public Date returnDate() {return date;}
 
     /*Constructor for loan*/
