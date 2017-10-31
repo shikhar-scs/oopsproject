@@ -162,7 +162,7 @@ public class index {
     private static void addtransactionFriend(Person p) {
         System.out.println('\n');
         Lend_Borrow tempFriend;
-        Vector<Lend_Borrow> vectorOfLend_borrow=new Vector<>(0);
+        Vector<Lend_Borrow> vectorOfLend_borrow=p.returnVectorOfLend_Borrow();
         System.out.println("Please Enter The Name Of The Friend");
         String PersonName=input.nextLine();
 
@@ -220,7 +220,7 @@ public class index {
     private static void addLoan(Person p) {
         System.out.println('\n');
         Owes_To tempLoan=null;
-        Vector<Owes_To> vectorOfOwes_To=new Vector<>(0);
+        Vector<Owes_To> vectorOfOwes_To=p.returnVectorOfOwes_to();
         System.out.println("Please Enter The Name Of The Bank");
         String bankName=input.nextLine();
 
@@ -269,7 +269,7 @@ public class index {
     private static void addExpense(Person p) {
         System.out.println('\n');
         Expense tempExpense;
-        Vector<Expense> vectorOfExpenses=new Vector<>(0);
+        Vector<Expense> vectorOfExpenses=p.returnVectorOfExpenses();
         System.out.println("Please enter the category/tag of expenditure");
         String tag=input.nextLine();
 
@@ -301,7 +301,7 @@ public class index {
         }
 
         else if(total==p.returnBudget()) {
-            p.setDebt(true);
+            p.setDebt(false);
 //            System.out.println("You've managed your budget and expenses to be exactly equal (should you be sad or happy ? XD)");
         }
         else {
@@ -316,7 +316,7 @@ public class index {
         //Used for calculating averageExpenses
         float total = totalExpenses(p);
 
-        if(!currentDebt){
+        if(currentDebt){
         System.out.println("You are under debt. You currently owe others " + (total - p.returnBudget()) + "rupees");
          }
 

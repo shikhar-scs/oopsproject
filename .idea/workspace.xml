@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf66e8c9-17be-4d28-97a9-6acd91040af8" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.txt" afterPath="$PROJECT_DIR$/data.txt" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Description" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPS concepts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project/index.class" afterPath="$PROJECT_DIR$/out/production/Project/index.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.txt" afterPath="$PROJECT_DIR$/data.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Person.java" afterPath="$PROJECT_DIR$/src/Person.java" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.java" afterPath="$PROJECT_DIR$/src/index.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,11 +25,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+<<<<<<< HEAD
       <file leaf-file-name="Lend_Borrow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Lend_Borrow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+=======
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="17" column="108" lean-forward="false" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
+              <folding>
+                <element signature="method#Person#0;class#Person#0" expanded="false" />
+                <element signature="method#verify#0;class#Person#0" expanded="false" />
+                <element signature="method#addLend_Borrow#0;class#Person#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lend_Borrow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Lend_Borrow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#518#519#0" expanded="true" />
@@ -31,7 +72,66 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="OOPS concepts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPS concepts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="840">
+              <caret line="40" column="129" lean-forward="false" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="index.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+=======
+      <file leaf-file-name="index.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1932">
+              <caret line="223" column="65" lean-forward="false" selection-start-line="223" selection-start-column="65" selection-end-line="223" selection-end-column="65" />
+              <folding>
+                <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
+                <element signature="method#averageExpense#0;class#index#0" expanded="false" />
+                <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
+                <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
+                <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
+                <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
+                <element signature="method#loggedIn#0;class#index#0" expanded="false" />
+                <element signature="method#signIn#0;class#index#0" expanded="false" />
+                <element signature="method#signUp#0;class#index#0" expanded="false" />
+                <element signature="method#main#0;class#index#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Owes_To.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Owes_To.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+              <folding>
+                <element signature="method#Owes_To#0;class#Owes_To#0" expanded="false" />
+                <element signature="method#Owes_To#1;class#Owes_To#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -41,11 +141,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/index.java">
+      <file leaf-file-name="Expense.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Expense.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="525">
+              <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
               <folding>
                 <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
                 <element signature="method#averageExpense#0;class#index#0" expanded="false" />
@@ -109,9 +210,15 @@
         <option value="$PROJECT_DIR$/documentation" />
         <option value="$PROJECT_DIR$/src/Person.java" />
         <option value="$PROJECT_DIR$/OOPS concepts" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Description" />
         <option value="$PROJECT_DIR$/data.txt" />
         <option value="$PROJECT_DIR$/src/index.java" />
+=======
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/index.java" />
+        <option value="$PROJECT_DIR$/data.txt" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
       </list>
     </option>
   </component>
@@ -142,26 +249,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="Scratches" />
+=======
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="oopsprojectjava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oopsprojectjava" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="oopsprojectjava" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oopsprojectjava" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+      <pane id="Scope" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,17 +424,31 @@
       <workItem from="1509424770540" duration="2629000" />
       <workItem from="1509431688074" duration="390000" />
       <workItem from="1509432702167" duration="1340000" />
+<<<<<<< HEAD
       <workItem from="1509434275987" duration="3799000" />
       <workItem from="1509447443575" duration="957000" />
       <workItem from="1509451552777" duration="445000" />
+=======
+      <workItem from="1509434275987" duration="3122000" />
+      <workItem from="1509443880976" duration="2705000" />
+      <workItem from="1509447084151" duration="426000" />
+      <workItem from="1509448216769" duration="34000" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="23988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="-4" width="1315" height="780" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="25074000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1384" height="736" extended-state="6" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -327,19 +458,27 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32685512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="29" width="1366" height="689" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32685512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="55" y="52" width="1311" height="716" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33073324" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17048146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.68727916" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16896024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39929327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -347,6 +486,35 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39929327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="WINDOWED" visible="false" show_stripe_button="true" weight="0.32685512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="0" y="29" width="1366" height="689" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06890459" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16896024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -356,11 +524,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -369,10 +538,29 @@
             <element signature="method#Person#0;class#Person#0" expanded="false" />
             <element signature="method#verify#0;class#Person#0" expanded="false" />
             <element signature="method#addLend_Borrow#0;class#Person#0" expanded="false" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Expense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/OOPS concepts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="40" column="129" lean-forward="false" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
     <entry file="file://$PROJECT_DIR$/src/index.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -380,21 +568,19 @@
           <folding>
             <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
             <element signature="method#averageExpense#0;class#index#0" expanded="false" />
-            <element signature="method#viewExpenses#0;class#index#0" expanded="false" />
             <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
-            <element signature="method#addtransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addExpense#0;class#index#0" expanded="false" />
-            <element signature="method#setDebt#0;class#index#0" expanded="false" />
-            <element signature="method#showDebt#0;class#index#0" expanded="false" />
             <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
             <element signature="method#loggedIn#0;class#index#0" expanded="false" />
             <element signature="method#signIn#0;class#index#0" expanded="false" />
             <element signature="method#signUp#0;class#index#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+            <element signature="method#main#0;class#index#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
@@ -461,21 +647,19 @@
           <folding>
             <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
             <element signature="method#averageExpense#0;class#index#0" expanded="false" />
-            <element signature="method#viewExpenses#0;class#index#0" expanded="false" />
             <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
-            <element signature="method#addtransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addExpense#0;class#index#0" expanded="false" />
-            <element signature="method#setDebt#0;class#index#0" expanded="false" />
-            <element signature="method#showDebt#0;class#index#0" expanded="false" />
             <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
             <element signature="method#loggedIn#0;class#index#0" expanded="false" />
             <element signature="method#signIn#0;class#index#0" expanded="false" />
             <element signature="method#signUp#0;class#index#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+            <element signature="method#main#0;class#index#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
@@ -535,21 +719,19 @@
           <folding>
             <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
             <element signature="method#averageExpense#0;class#index#0" expanded="false" />
-            <element signature="method#viewExpenses#0;class#index#0" expanded="false" />
             <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
-            <element signature="method#addtransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addExpense#0;class#index#0" expanded="false" />
-            <element signature="method#setDebt#0;class#index#0" expanded="false" />
-            <element signature="method#showDebt#0;class#index#0" expanded="false" />
             <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
             <element signature="method#loggedIn#0;class#index#0" expanded="false" />
             <element signature="method#signIn#0;class#index#0" expanded="false" />
             <element signature="method#signUp#0;class#index#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+            <element signature="method#main#0;class#index#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
@@ -609,21 +791,19 @@
           <folding>
             <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
             <element signature="method#averageExpense#0;class#index#0" expanded="false" />
-            <element signature="method#viewExpenses#0;class#index#0" expanded="false" />
             <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
-            <element signature="method#addtransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addExpense#0;class#index#0" expanded="false" />
-            <element signature="method#setDebt#0;class#index#0" expanded="false" />
-            <element signature="method#showDebt#0;class#index#0" expanded="false" />
             <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
             <element signature="method#loggedIn#0;class#index#0" expanded="false" />
             <element signature="method#signIn#0;class#index#0" expanded="false" />
             <element signature="method#signUp#0;class#index#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+            <element signature="method#main#0;class#index#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
@@ -683,21 +863,19 @@
           <folding>
             <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
             <element signature="method#averageExpense#0;class#index#0" expanded="false" />
-            <element signature="method#viewExpenses#0;class#index#0" expanded="false" />
             <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
-            <element signature="method#addtransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addExpense#0;class#index#0" expanded="false" />
-            <element signature="method#setDebt#0;class#index#0" expanded="false" />
-            <element signature="method#showDebt#0;class#index#0" expanded="false" />
             <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
             <element signature="method#loggedIn#0;class#index#0" expanded="false" />
             <element signature="method#signIn#0;class#index#0" expanded="false" />
             <element signature="method#signUp#0;class#index#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+            <element signature="method#main#0;class#index#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
@@ -757,21 +935,19 @@
           <folding>
             <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
             <element signature="method#averageExpense#0;class#index#0" expanded="false" />
-            <element signature="method#viewExpenses#0;class#index#0" expanded="false" />
             <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
-            <element signature="method#addtransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addExpense#0;class#index#0" expanded="false" />
-            <element signature="method#setDebt#0;class#index#0" expanded="false" />
-            <element signature="method#showDebt#0;class#index#0" expanded="false" />
             <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
             <element signature="method#loggedIn#0;class#index#0" expanded="false" />
             <element signature="method#signIn#0;class#index#0" expanded="false" />
             <element signature="method#signUp#0;class#index#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+            <element signature="method#main#0;class#index#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
@@ -838,21 +1014,19 @@
           <folding>
             <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
             <element signature="method#averageExpense#0;class#index#0" expanded="false" />
-            <element signature="method#viewExpenses#0;class#index#0" expanded="false" />
             <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
-            <element signature="method#addtransactionFriend#0;class#index#0" expanded="false" />
             <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addLoan#0;class#index#0" expanded="false" />
-            <element signature="method#addExpense#0;class#index#0" expanded="false" />
-            <element signature="method#setDebt#0;class#index#0" expanded="false" />
-            <element signature="method#showDebt#0;class#index#0" expanded="false" />
             <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
             <element signature="method#loggedIn#0;class#index#0" expanded="false" />
             <element signature="method#signIn#0;class#index#0" expanded="false" />
             <element signature="method#signUp#0;class#index#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+            <element signature="method#main#0;class#index#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
@@ -919,6 +1093,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -957,6 +1132,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Expense.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           <folding>
             <element signature="method#Expense#0;class#Expense#0" expanded="false" />
             <element signature="e#664#665#0" expanded="true" />
@@ -965,6 +1146,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -974,13 +1156,28 @@
             <element signature="method#verify#0;class#Person#0" expanded="false" />
             <element signature="method#addLend_Borrow#0;class#Person#0" expanded="false" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/documentation" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="288">
+            <caret line="13" column="9" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Owes_To.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="504">
           <caret line="48" column="0" lean-forward="true" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+=======
+        <state relative-caret-position="546">
+          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           <folding>
             <element signature="method#Owes_To#0;class#Owes_To#0" expanded="false" />
             <element signature="method#Owes_To#1;class#Owes_To#0" expanded="false" />
@@ -988,6 +1185,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Lend_Borrow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1031,10 +1229,77 @@
             <element signature="method#signUp#0;class#index#0" expanded="false" />
             <element signature="method#leave#0;class#index#0" expanded="false" />
             <element signature="method#enter#0;class#index#0" expanded="false" />
+=======
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lend_Borrow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Lend_Borrow#0;class#Lend_Borrow#0" expanded="false" />
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/OOPS concepts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="40" column="129" lean-forward="false" selection-start-line="40" selection-start-column="129" selection-end-line="40" selection-end-column="129" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="17" column="108" lean-forward="false" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
+          <folding>
+            <element signature="method#Person#0;class#Person#0" expanded="false" />
+            <element signature="method#verify#0;class#Person#0" expanded="false" />
+            <element signature="method#addLend_Borrow#0;class#Person#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1932">
+          <caret line="223" column="65" lean-forward="false" selection-start-line="223" selection-start-column="65" selection-end-line="223" selection-end-column="65" />
+          <folding>
+            <element signature="method#totalExpenses#0;class#index#0" expanded="false" />
+            <element signature="method#averageExpense#0;class#index#0" expanded="false" />
+            <element signature="method#deletetransactionFriend#0;class#index#0" expanded="false" />
+            <element signature="method#deleteAccount#0;class#index#0" expanded="false" />
+            <element signature="method#deleteLoan#0;class#index#0" expanded="false" />
+            <element signature="method#deleteExpense#0;class#index#0" expanded="false" />
+            <element signature="method#loggedIn#0;class#index#0" expanded="false" />
+            <element signature="method#signIn#0;class#index#0" expanded="false" />
+            <element signature="method#signUp#0;class#index#0" expanded="false" />
+            <element signature="method#main#0;class#index#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> c846ab5d85b1ad8cc394fa256be63befc15d6870
   </component>
   <component name="masterDetails">
     <states>
