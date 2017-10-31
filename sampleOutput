@@ -1,0 +1,275 @@
+/usr/lib/jvm/java-8-oracle/bin/java -javaagent:/home/shikhar/Desktop/idea-IU-172.3757.52/lib/idea_rt.jar=33987:/home/shikhar/Desktop/idea-IU-172.3757.52/bin -Dfile.encoding=UTF-8 -classpath /usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/deploy.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/dnsns.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/jfxrt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-oracle/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-oracle/jre/lib/javaws.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfxswt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/management-agent.jar:/usr/lib/jvm/java-8-oracle/jre/lib/plugin.jar:/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/home/shikhar/Desktop/oopsprojectjava/out/production/Project index
+
+
+Existing users
+1 Shikhar Agnihotri
+CHOOSE 
+ 1. Sign in
+2. Sign up
+3. Exit
+2
+
+
+Enter Your Name
+Soumya Himanish Mohapatra
+Enter UserName
+himanish-star
+Enter Password
+shmiitian
+Confirm Password
+shmiitian
+Please enter your current Budget
+3000
+
+
+Do you want to sign in now? (yes/no)
+yes
+Enter UserName
+shikhar9a
+Enter password
+123456
+
+
+Successfully logged in as Shikhar Agnihotri
+User Id : 1
+
+--ADD ZONE--
+
+1. Add New Expense Details
+2. Add details of transactions among friends
+3. Add Details Of A New Loan Or A New Account
+
+--DELETE ZONE--
+
+4. Delete Existing Expense Details
+5. Delete details of transactions among friends
+6. Delete loan record
+7. Delete account record
+
+--VIEW ZONE--
+
+8. View Total Expenses, Deposits And Loans as well as transactions among friends
+9. Avg Expense per day
+10. Debt or not :'(
+
+--EXIT ZONE--
+
+11. Log Out
+
+**NOTE** the menu has not been printed afterwards to make the output clearer and shorter. Please refer to the above one for any details.
+
+1
+
+Please enter the category/tag of expenditure
+Shoes
+Please enter the amount of expenditure
+3000
+Please enter the mode of payment of the expenditure
+credit
+
+**DISPLAY MENU**
+
+1
+
+Please enter the category/tag of expenditure
+Pizza
+Please enter the amount of expenditure
+475
+Please enter the mode of payment of the expenditure
+cash
+
+**DISPLAY MENU**
+
+2
+
+Please Enter The Name Of The Friend
+Soumya
+Please Enter The Amount
+300
+Please Enter the Type Borrow/Lend
+Lend
+Please Enter The Tag
+Photocopy
+Please Enter The Mode Of Payment
+Cash
+
+**DISPLAY MENU**
+
+3
+
+Please Enter The Name Of The Bank
+ICICI
+1. Add a new loan
+2. Add a new account
+1
+Please Enter The Amount
+10000
+Please Enter The Rate Of Interest
+12
+Please Enter The Loan Number/Id
+LN-123456
+
+**DISPLAY MENU**
+
+3
+
+Please Enter The Name Of The Bank
+SBI
+1. Add a new loan
+2. Add a new account
+2
+Please Enter The Amount
+20000
+Please Enter The Type Of Account
+Savings
+Please Enter The Account Number
+AC-123456
+Please Enter The Rate Of Interest
+6
+
+**DISPLAY MENU**
+
+8
+
+Expenses Details
+--Sr.--  --Tag-- --Date--  --Mode Of Payment--  --Amount-- 
+1   Shoes   Tue Oct 31 23:12:29 IST 2017   credit   3000.0
+2   Pizza   Tue Oct 31 23:12:43 IST 2017   cash   475.0
+
+
+Money Lent/Borrowed from friends
+--Sr.--  --Category-- --Tag----Name of Friend  --Date--  --Mode Of Payment--  --Amount-- 
+1   Lend   Photocopy   Soumya  Tue Oct 31 23:13:11 IST 2017   Cash   300.0
+
+
+Loan Details
+--Bank--  --Amount--  --Rate--  --Loan No.-- 
+ICICI   10000.0   12.0   LN-123456
+
+
+Deposit Details
+--Bank--  --Amount--  --Rate--  --Account No.--  --Account Type-- 
+SBI   20000.0   6.0   AC-123456   Savings
+
+**DISPLAY MENU**
+
+9
+
+
+The Avg Expense Per Day is  3775.0
+
+
+**DISPLAY MENU**
+
+10
+
+You currently can spend 225.0rupees
+
+**DISPLAY MENU**
+
+4
+
+Please enter serial no. of the Expense you want to delete
+1
+The desired serial number of expense has been deleted
+
+**DISPLAY MENU**
+
+5
+
+Please enter the serial number of the transaction
+1
+The desired transaction number has been deleted
+
+**DISPLAY MENU**
+
+6
+
+Please enter the loan number of the loan you want to delete
+LN-123456
+The desired loan record has been deleted
+
+**DISPLAY MENU**
+
+7
+
+
+Please enter the account number of the deposit you want to delete
+AC-123456
+The desired account record has been deleted
+
+**DISPLAY MENU**
+
+8
+
+Expenses Details
+--Sr.--  --Tag-- --Date--  --Mode Of Payment--  --Amount-- 
+1   Pizza   Tue Oct 31 23:12:43 IST 2017   cash   475.0
+
+
+Money Lent/Borrowed from friends
+--Sr.--  --Category-- --Tag----Name of Friend  --Date--  --Mode Of Payment--  --Amount-- 
+
+
+Loan Details
+--Bank--  --Amount--  --Rate--  --Loan No.-- 
+
+
+Deposit Details
+--Bank--  --Amount--  --Rate--  --Account No.--  --Account Type-- 
+
+**DISPLAY MENU**
+
+10
+
+You currently can spend 3525.0rupees
+
+**DISPLAY MENU**
+
+11
+
+CHOOSE 
+ 1. Sign in
+2. Sign up
+3. Exit
+1
+Enter UserName
+shikhar9a
+Enter password
+123456
+
+
+Successfully logged in as Shikhar Agnihotri
+User Id : 1
+
+**DISPLAY MENU**
+
+8
+
+Expenses Details
+--Sr.--  --Tag-- --Date--  --Mode Of Payment--  --Amount-- 
+1   Pizza   Tue Oct 31 23:12:43 IST 2017   cash   475.0
+
+
+Money Lent/Borrowed from friends
+--Sr.--  --Category-- --Tag----Name of Friend  --Date--  --Mode Of Payment--  --Amount-- 
+
+
+Loan Details
+--Bank--  --Amount--  --Rate--  --Loan No.-- 
+
+
+Deposit Details
+--Bank--  --Amount--  --Rate--  --Account No.--  --Account Type-- 
+
+**DISPLAY MENU**
+
+11
+
+CHOOSE 
+ 1. Sign in
+2. Sign up
+3. Exit
+3
+
+Process finished with exit code 0
