@@ -2,11 +2,13 @@
 
 ### This project aims to help you keep track of your daily expenses. You can enter the reason, amount, mode of payment and it will automatically store it along with the date and time. 
 
-It can also manage transactions that you have lent to or borrowed from your friends (though money once borrowed from a friend is not meant to be paid back ,lol XD).
+The money you spent on food :P, stationery, rent to your landlord and also borrowed from or lent to your friends. It can also store your loan details if you have made any with a bank, providing facilities keep track of all installments you've made. As an additional feature you can also keep a total budget for the week and the app will remind you if you cross your budget.(which normally happens a lot of times)
 
-This app will keep track of any loans you have taken from a bank and also the monthly deposits u have made.
 
-Though its still in the development stage, it'll be made available soon for others :D
+Just Sign Up/ make an account and you are ready to go. Once you sign in you can view all your stored transactions, delete he ones you no more wish to keep. And, guess what you dont need to store the date or time, it automatically will manage that for you :).
+
+
+Our entire project has been stored on a version control system, GITHUB, the link for which has been provided down below. We would love to hear your views/edits etc. via that link. Refer the README for further details.
 
 Further we will be looking forward to link it with a responsive website. So please stay tuned.
 

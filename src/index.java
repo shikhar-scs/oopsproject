@@ -39,9 +39,6 @@ public class index {
 
 //        //Declaring Vector of Expenses
         Vector<Expense> vectorOfExpenses=p.returnVectorOfExpenses();
-//
-//        //Declaring Vector of Lend_Borrow
-//        Vector<Lend_Borrow> vectorOfLend_borrow=p.returnVectorOfLend_Borrow();
 
         //Dates for calculating difference for averageExpense
         Date maxDate,minDate;
@@ -374,7 +371,7 @@ public class index {
             System.out.println("9. Avg Expense per day");
             System.out.println("10. Debt or not :'( ");
             System.out.println("\n--EXIT ZONE--\n");
-            System.out.println("11. Log Out");
+            System.out.println("11. Log Out \n \n \n ");
             int expenseChoice = input.nextInt();
             input.nextLine();
 
@@ -534,7 +531,7 @@ public class index {
                 if(file.available()==0){
                     return;
                 }
-                System.out.println("Existing users");
+                System.out.println("Existing users\n\n");
                 while (file.available()>0){
                     Person p;
                     p=(Person) i.readObject();
@@ -545,6 +542,7 @@ public class index {
                     vectorOfPersons.add(p);
                     line++;
                 }
+                System.out.println("\n\n");
                 i.close();
                 file.close();
                 idGenerator+=line;
@@ -568,7 +566,7 @@ public class index {
             bool=false;
         }
 
-        System.out.println("CHOOSE \n 1. Sign in\n2. Sign up\n3. Exit");
+        System.out.println("CHOOSE \n\n1. Sign in \n\n2. Sign up \n\n3. Exit \n\n ");
 
         int choice = input.nextInt();
         switch (choice) {
