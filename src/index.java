@@ -34,10 +34,8 @@ public class index {
 
     private static void averageExpense(Person p){
 
-        //Used for calculating averageExpenses
         float total=totalExpenses(p);
 
-//        //Declaring Vector of Expenses
         Vector<Expense> vectorOfExpenses=p.returnVectorOfExpenses();
 
         //Dates for calculating difference for averageExpense
@@ -55,11 +53,12 @@ public class index {
                 minDate=tempDate;
         }
 
-        long diffInMillies = maxDate.getTime() - minDate.getTime();
-        diffInMillies = ((((diffInMillies /1000)/60)/60)/24);
-        if(diffInMillies==0)
-            ++diffInMillies;
-        System.out.println("The Avg Expense Per Day is  "+ total/diffInMillies + "\n");
+        double diffInMillies = minDate.getTime() - maxDate.getTime();
+        double diffInDays = Math.floor((((diffInMillies /1000)/60)/60)/24);
+            ++diffInDays;
+        System.out.println("The Total Expense is  "+ total + "\n");
+        System.out.println("The Total No of Days is  "+ diffInDays + "\n");
+        System.out.println("The Avg Expense Per Day is  "+ total/diffInDays + "\n");
     }
 
     private static void viewExpenses(Person p){
@@ -99,6 +98,10 @@ public class index {
                 continue;
             System.out.println(vectorOfOwes_To.elementAt(i).returnBankName()+"   "+vectorOfOwes_To.elementAt(i).returnAmount()+"   "+vectorOfOwes_To.elementAt(i).returnRate()+"   "+vectorOfOwes_To.elementAt(i).returnAccountNumber()+"   "+vectorOfOwes_To.elementAt(i).returnAccountType());
         }
+
+
+        System.out.println("\n\n The Total Expenses are  "+ totalExpenses(p) + "\n");
+
     }
 
     private static void deletetransactionFriend(Person p) {
