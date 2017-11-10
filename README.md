@@ -7,9 +7,6 @@ The money you spent on food :P, stationery, rent to your landlord and also borro
 
 Just Sign Up/ make an account and you are ready to go. Once you sign in you can view all your stored transactions, delete he ones you no more wish to keep. And, guess what you dont need to store the date or time, it automatically will manage that for you :).
 
-
-Our entire project has been stored on a version control system, GITHUB, the link for which has been provided down below. We would love to hear your views/edits etc. via that link. Refer the README for further details.
-
 Further we will be looking forward to link it with a responsive website. So please stay tuned.
 
 Happy Tracking :)
